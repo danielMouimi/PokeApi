@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.contPoke {
+  justify-content: center;
+  padding-top: 3rem;
+}
+.pokeCard {
+  display: flex;
+  width: 17rem;
+  margin: 1.5rem;
+}
+.Pokemons {
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, black, red);
+  padding-bottom: 2rem;
+  color: white;
+}
+.chargeMore {
+  background-color: rgb(105, 105, 255);
+  transition:all 0.3s ease;
+  width: 85vw;
+  border-radius: 20px;
+}
+.chargeMore:hover {
+  background-color: rgb(0, 0, 78);
+  color: white;
+  transition:all 0.3s ease;
+}
+
+/* Estilo general de la carta */
+.pokeCard {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  
+  border: 3px solid #000;
+}
+
+/* Cabecera con nombre y HP */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Imagen del Pokémon */
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.card-img-top {
+  width: 100px;
+  height: 100px;
+}
+
+/* Lista de habilidades */
+.list-group {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+/* Botón de descripción */
+.card-link {
+  background-color: #ffcc00;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-link:hover {
+  background-color: #ffaa00;
+}
+
+/* Tipos de Pokémon */
+.grass-type { background-color: #78C850; color: white; }
+.fire-type { background-color: #F08030; color: white; }
+.water-type { background-color: #6890F0; color: white; }
+.electric-type { background-color: #F8D030; color: black; }
+.psychic-type { background-color: #F85888; color: white; }
+.fighting-type { background-color: #C03028; color: white; }
+.dark-type { background-color: #705848; color: white; }
+.dragon-type { background-color: #7038F8; color: white; }
+.steel-type { background-color: #B8B8D0; color: black; }
+.normal-type { background-color: #A8A878; color: black; }
+.default-type { background-color: #D3D3D3; color: black; }
+
+
+.image-container {
+  width: 90vw;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-game-image {
+  width: 60%;
+  height: auto;
+}
+
+.pistas {
+  display: flex;
+  justify-content: center;
+}
+.pistas p {
+  margin-right: 1rem;
+}
+.answer-cont {
+  display: flex;
+  justify-content: center;
+}
+.gess-input {
+  width: 70%;
+  border-radius: 20px;
+  background: linear-gradient(90deg in oklab, red,white, red);
+  text-align: center;
+}
+
+.winPage {
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.goBack, .gess-button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin: 0 10px;
+  background-color: #B22222; /* Rojo fuego */
+}
+
+.goBack:hover, .gess-button:hover {
+  background-color: #FF6347; /* Rojo tomate */
+  color: #000;
+  transition: all 0.3 ease;
+}
+
