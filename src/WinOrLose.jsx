@@ -52,7 +52,11 @@ export function WinOrLose() {
             } else {
                 console.log(user.displayName)
                 let nombre = user.displayName ? user.displayName:user.email.split('@')[0];
-              setDoc(userRankingRef, { usuario: nombre, victorias: 0 });
+                if (win) {
+                    setDoc(userRankingRef, { usuario: nombre, victorias: 1 });
+                }else {
+                    setDoc(userRankingRef, { usuario: nombre, victorias: 0 });
+                }
             }
         })
         .catch((error) => console.error("Error al obtener/crear ranking:", error));  

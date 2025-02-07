@@ -17,16 +17,16 @@ export default function Landing() {
         <div id="pokemonCarousel" className="carousel slide carr" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="d-block w-100" src="../images/fondo1.jpg" alt="Pokemon 1" />
+              <img className="d-block w-100" src="/images/fondo1.jpg" alt="Pokemon 1" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="../images/fondo2.jpg" alt="Pokemon 2" />
+              <img className="d-block w-100" src="/images/fondo2.jpg" alt="Pokemon 2" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="../images/fondo3.jpg" alt="Pokemon 3" />
+              <img className="d-block w-100" src="/images/fondo3.jpg" alt="Pokemon 3" />
             </div>
             <div className="carousel-item">
-              <img className="d-block w-100" src="../images/fondo4.jpg" alt="Pokemon 4" />
+              <img className="d-block w-100" src="/images/fondo4.jpg" alt="Pokemon 4" />
             </div>
 
             </div>

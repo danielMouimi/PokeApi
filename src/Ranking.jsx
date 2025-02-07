@@ -9,7 +9,7 @@ export function Ranking() {
         Top3Users();
     }, []);
 
-    async function Top3Users() {
+    function Top3Users() {
         try {
             const rankingRef = collection(db, "Ranking");
             const q = query(rankingRef, orderBy("victorias", "desc"), limit(3));
